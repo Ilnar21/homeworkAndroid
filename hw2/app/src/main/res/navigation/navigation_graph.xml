@@ -45,10 +45,19 @@
     <fragment
         android:id="@+id/musicFragment"
         android:name="com.example.hw2.MusicFragment"
-        tools:layout="@layout/fragment_music" />
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment_to_displayMusicFragment"
+            app:destination="@id/displayMusicFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.hw2.SettingsFragment"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/displayMusicFragment"
+        android:name="com.example.hw2.DisplayMusicFragment"
+        android:label="fragment_display_music"
+        tools:layout="@layout/fragment_display_music" />
 </navigation>

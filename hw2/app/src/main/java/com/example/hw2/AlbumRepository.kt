@@ -1,0 +1,50 @@
+package com.example.hw2
+
+object AlbumRepository {
+    val albums: List<Album> = listOf(
+        Album(1,
+            "After Hours",
+            "The Weeknd",
+            "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
+            "Modern rhythm and blues,",
+            "After Hours is the fourth studio album by Canadian singer The Weeknd, released on March 20, 2020"),
+        Album(2,
+            "Starboy",
+            "The Weeknd",
+            "https://upload.wikimedia.org/wikipedia/ru/3/39/The_Weeknd_-_Starboy.png",
+            "Modern rhythm and blues,",
+            "The third studio album by Canadian singer The Weeknd. It was released on November 25, 2016"),
+        Album(3,
+            "Blonde",
+            "Frank Ocean",
+            "https://upload.wikimedia.org/wikipedia/ru/thumb/f/f3/%D0%A4%D1%80%D1%8D%D0%BD%D0%BA_%D0%9E%D1%83%D1%88%D0%B5%D0%BD_Blonde.jpg/800px-%D0%A4%D1%80%D1%8D%D0%BD%D0%BA_%D0%9E%D1%83%D1%88%D0%B5%D0%BD_Blonde.jpg",
+            "Psychedelic pop",
+            "The second studio album by American musician Frank Ocean, released on August 20, 2016."),
+        Album(4,
+            "Good kid, m.A.A.d city",
+            "Kendrick Lamar",
+            "https://upload.wikimedia.org/wikipedia/ru/0/03/Good_Kid%2C_M.A.A.D_City.jpg",
+            "Hip Hop, Gangsta rap",
+            "The second studio album by American rapper Kendrick Lamar. It was released on October 22, 2012"),
+        Album(5,
+            "Mr. Morale & The Big Steppers",
+            "Kendrick Lamar",
+            "https://upload.wikimedia.org/wikipedia/ru/thumb/6/6d/Mr._Morale_%26_The_Big_Steppers.jpg/640px-Mr._Morale_%26_The_Big_Steppers.jpg",
+            "Hip Hop",
+            "The fifth studio album by American rapper Kendrick Lamar, released on May 13, 2022"),
+        Album(6,
+            "Abbey Road",
+            "The Beatles",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4Pxm-1PthG6U_rMy78I4CsMMBZwM2_FLWw&s",
+            "Rock",
+            "Detailed description of Abbey Road."),
+        Album(7,
+            "Igor",
+            "Tyler, the Creator",
+            "https://upload.wikimedia.org/wikipedia/ru/thumb/e/e4/Tyler%2C_the_Creator_-_Igor.jpg/411px-Tyler%2C_the_Creator_-_Igor.jpg",
+            "Hip Hop",
+            "The fifth studio album[b] by American rap artist Tyler, the Creator. The album was released on May 17, 2019")
+    )
+
+    fun getAlbumById(id: Int) = albums.find { it.id == id }
+}
